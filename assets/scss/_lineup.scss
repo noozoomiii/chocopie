@@ -1,0 +1,49 @@
+
+.lineup{
+    background-color: #AF8D31;
+    color: #36160F;
+    display: flex;
+    flex-direction: column;
+}
+
+.lineup-top{
+    text-align: center;
+}
+
+.lineup-title{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.lineup-sub{
+    font-size: 12px;
+    margin-top: 1%;
+    font-weight: lighter;
+}
+
+.lineup-img{
+    background-image: url("https://yonimo.jp/images/bg_lineup.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: auto;
+    padding: 10% 0;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider-item{
+    flex-direction: column;
+    width: 33%;
+}
+
+.item-img img{
+    width: 100%;
+}

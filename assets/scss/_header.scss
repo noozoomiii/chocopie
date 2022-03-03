@@ -1,0 +1,92 @@
+
+// img{
+//     max-width: 100%;
+// }
+
+// header{
+//     height: 100vh;
+// }
+
+.bg-slider{
+    width: 100vw;
+    height: 57vw;
+    // min-height: 450px;
+    // background-image: url("../img/f42878a53314b5576d7092ec2d2b3b5e.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+// ------------------------------------------------
+
+
+
+
+// ------------------------------------------------
+
+.bg-box{
+    position: absolute;
+    // top: 7%;
+    // left: 33%;
+}
+
+.bg-title{
+    color: white;
+    font-size: 80px;
+    text-shadow: 1px 1px 1px #000;
+    font-family: 'Wawati SC','HanziPen TC','Hannotate SC',sans-serif;
+    font-weight: lighter;
+    line-height: 35px;
+    display: block;
+    opacity: 0;
+}
+
+.bg-title span{
+    opacity: 0;
+    -webkit-transition: .6s ease-in-out;
+    transition: .6s;
+}
+
+// .bg-title2{
+//     color: rgb(255, 255, 255);
+//     font-size: 30px;
+//     text-align: center;
+//     text-shadow: 1px 1px 1px #000;
+//     font-family: 'Wawati SC','HanziPen TC','Hannotate SC',sans-serif;
+//     font-weight: lighter;
+//     position: absolute;
+//     transform: rotate(-38deg);
+//     top: 25px;
+//     left: 75%;
+// }
+
+// .new{
+//     position: relative;
+// }
+
+// .new img{
+//     position: absolute;
+//     width: 120px;
+//     top: 0%;
+//     left: 60%;
+// }
+
+
+
+.bg-text{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体', sans-serif;
+    font-weight: lighter;
+    line-height: 28px;
+    position: absolute;
+    top: 70%;
+    left: 80%;
+}
