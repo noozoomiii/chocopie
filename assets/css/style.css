@@ -1,0 +1,118 @@
+@charset "UTF-8";
+.bg-slider {
+  width: 100vw;
+  height: 57vw;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.bg-box {
+  position: absolute;
+}
+
+.bg-title {
+  color: white;
+  font-size: 80px;
+  text-shadow: 1px 1px 1px #000;
+  font-family: 'Wawati SC','HanziPen TC','Hannotate SC',sans-serif;
+  font-weight: lighter;
+  line-height: 35px;
+  display: block;
+  opacity: 0;
+}
+
+.bg-title span {
+  opacity: 0;
+  -webkit-transition: .6s ease-in-out;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.bg-text {
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体', sans-serif;
+  font-weight: lighter;
+  line-height: 28px;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+}
+
+.lineup {
+  background-color: #AF8D31;
+  color: #36160F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lineup-top {
+  text-align: center;
+}
+
+.lineup-title {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.lineup-sub {
+  font-size: 12px;
+  margin-top: 1%;
+  font-weight: lighter;
+}
+
+.lineup-img {
+  background-image: url("https://yonimo.jp/images/bg_lineup.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: auto;
+  padding: 10% 0;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slider-item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+}
+
+.item-img img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
