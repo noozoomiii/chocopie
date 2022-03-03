@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 .bg-slider {
   width: 100vw;
@@ -114,5 +115,18 @@
 
 .item-img img {
   width: 100%;
+=======
+.section1 {
+  height: 100%;
+  background-image: url("../img/chocolate.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.chocopie {
+  text-align: center;
+  padding: 50px 0;
+>>>>>>> a302ed160dfc02f20b8a9341100db674defc7a43
 }
 /*# sourceMappingURL=style.css.map */
