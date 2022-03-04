@@ -16,7 +16,7 @@ $(function () {
 
     // -----------------------------------background画像のプラグイン--------------------------------------
     $(".bg-slider").bgSwitcher({
-        images: ["./assets/img/waifu_choco2.png", "./assets/img/chocopie_one.png", "./assets/img/waifu_choco.png"],
+        images: ["./assets/img/chocopie_one.png", "./assets/img/waifu_choco.png", "./assets/img/waifu_choco2.png"],
         interval: 5000,
         loop: true,
         shuffle: true,
@@ -52,7 +52,7 @@ $(function () {
         if(now + windowheight > item_h){
 
             // (.js-fadein)にアニメーションの動きの(.fadein-item)をつける---
-            $(".js-fadein").addClass("fadein-item");
+            $(element).addClass("fadein-item");
         }
         })
     })
