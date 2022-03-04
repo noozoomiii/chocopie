@@ -438,9 +438,18 @@
   background-size: cover;
 }
 
+.section1 h3 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  padding: 150px 0;
+  line-height: 1.5em;
+}
+
 .chocopie {
   text-align: center;
   padding-top: 300px;
+  padding-bottom: 250px;
   position: relative;
 }
 
@@ -455,6 +464,7 @@
   position: absolute;
   height: 200px;
   top: 30%;
+  top: -20%;
 }
 
 .fukidashi1,
@@ -484,6 +494,7 @@
   color: white;
   font-size: 25px;
 }
+
 
 .box {
   height: 100vh;
@@ -516,5 +527,31 @@
   color: white;
   font-size: 50px;
   font-family: 'Wawati SC','HanziPen TC','Hannotate SC',sans-serif;
+}
+
+.eatme {
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  height: 100px;
+}
+
+.soyummy {
+  position: absolute;
+  top: 10%;
+  left: 58%;
+  height: 110px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.good {
+  position: absolute;
+  top: -10%;
+  left: 30%;
+}
+
+.chocopie3 {
+  padding: 20px 0 150px 0;
 }
 /*# sourceMappingURL=style.css.map */
