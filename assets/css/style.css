@@ -354,7 +354,6 @@
   text-decoration: none;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  z-index: 1;
 }
 
 .btn-buy::before {
@@ -496,8 +495,7 @@
 }
 
 .recipe {
-  background-image: url("../img/chocolate.jpg");
-  background-attachment: fixed;
+  background-image: url("../img/chocorecipe.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -511,6 +509,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: 'Sawarabi Mincho', serif;
 }
 
 .recipe h1,
