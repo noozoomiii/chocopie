@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>chocopie</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div class="bg-slider">
             <div class="bg-box">
                 <p class="bg-title">世にもおいしいチョコパイ</p>
@@ -28,65 +29,95 @@
                 新食感チョコパイです。
             </p>
         </div>
+        <nav id="navi">
+            <ul class="nav-menu">
+                <li><a href="#s">Search</a></li>
+                <li><a href="#sub-title">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="mask"></div>
     </header>
 
     <body>
-        <div class="lineup" style="margin-top: 100vh;">
+        <div class="lineup">
             <div class="lineup-img"></div>
             <div class="lineup-top">
                 <h2 class="lineup-title js-fadein">LINE UP</h2>
                 <p class="lineup-sub js-fadein">世にも美味しいシリーズの紹介</p>
             </div>
             <div class="slider">
-                <div class="slider-item js-fadein">
+                <div class="slider-item js-fadein animax1">
                     <div class="item-img">
-                        <img src="./assets/img/chocopie_choco.png" alt="">
+                        <img src="./assets/img/chocopie_choco.png" alt="" class="shake">
                     </div>
                     <div class="item-text1">
                         <p class="text1-text">
                             世にもおいしい<br>
-                            チョコブラウニー
+                            三角チョコパイ 黒
                         </p>
                     </div>
                     <div class="item-text2">
                         <p class="text2-text">
-                            濃厚なチョコをたっぷり使用
+                            パイ生地を何層にも重ねることで生まれる<br>
+                            サクサクした食感の三角パイに<br>
+                            とろ～りあたたかいチョコクリームのハーモニーが魅力。
                         </p>
                     </div>
                 </div>
-                <div class="slider-item">
+                <div class="slider-item js-fadein animax2">
                     <div class="item-img">
-                        <img src="./assets/img/choco_cream.png" alt="">
+                        <img src="./assets/img/choco_cream.png" alt="" class="shake">
                     </div>
                     <div class="item-text1">
                         <p class="text1-text">
                             世にもおいしい<br>
-                            割れチョコブラウニー
+                            よくばりカスタード
                         </p>
                     </div>
                     <div class="item-text2">
                         <p class="text2-text">
-                            切れ端を集めました。
+                            バニラビーンズが入った黄色いたまごカスタードと<br>
+                            白いミルクカスタードの2種類を使用した<br>
+                            濃厚なカスタードクリームの甘み溢れる一品です。
                         </p>
                     </div>
                 </div>
-                <div class="slider-item">
+                <div class="slider-item js-fadein animax3">
                     <div class="item-img">
-                        <img src="./assets/img/image-removebg-preview.png" alt="">
+                        <img src="./assets/img/image-removebg-preview.png" alt="" class="shake">
                     </div>
                     <div class="item-text1">
                         <p class="text1-text">
                             世にもおいしい<br>
-                            チョコプディング
+                            クッキー&クリーム
                         </p>
                     </div>
                     <div class="item-text2">
                         <p class="text2-text">
-                            ブラウニーをトッピング
+                            なめらかチョコプディングに<br>
+                            ブラウニーをトッピング<br>
+                            濃厚なチョコレート体験をどうぞ。
                         </p>
                     </div>
                 </div>
             </div>
+            <div class="slider-btn js-fadein">
+                <a href="https://www.mcdonalds.co.jp/" target="_blank" class="btn-buy">購入できるお店はこちら</a>
+            </div>
+            <div class="reverse-img"></div>
+        </div>
+        <div class="box">
+            <div class="eat">
+                <h1 class="howto">三角チョコパイの食べ方</h1>
+                
+            </div>
+            <div class="cat"></div>
         </div>
     </body>
     <footer>
@@ -94,6 +125,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/jquery.bgswitcher.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
