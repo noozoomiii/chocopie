@@ -51,7 +51,7 @@ $(function () {
         // now + windowheight で画面下の高さを取ってきて変数item_hが画面に出てきた時の条件をつける---
         if(now + windowheight > item_h){
 
-            // (.js-fadein)にアニメーションの動きの(.fadein-item)をつける---
+            // $(element)※それぞれの高さを取って※アニメーションの動きの(.fadein-item)をつける---
             $(element).addClass("fadein-item");
         }
         })
@@ -73,16 +73,17 @@ $(function () {
         }
     })
 
-    $("#mask").on("click",function(){
-        $("#header").removeClass("open");
-    });
+    // $("#mask").on("click",function(){
+    //     $("#header").removeClass("open");
+    // });
 
-    $("#navi a").on("click",function(){
-        $("#header").removeClass("open");
+    // $("#navi a").on("click",function(){
+    //     $("#header").removeClass("open");
+    // })
+
+    $(".toggle_btn").on("click",function(){
+        console.log($("#navi").height());
     })
-
-
-
 
 
 
