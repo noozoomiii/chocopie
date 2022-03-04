@@ -430,7 +430,7 @@
   z-index: 0;
 }
 
-.section1 {
+.product {
   background-image: url("../img/bg_point.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -438,7 +438,7 @@
   background-size: cover;
 }
 
-.section1 h3 {
+.product h3 {
   text-align: center;
   color: white;
   font-size: 30px;
@@ -524,6 +524,62 @@
 
 .chocopie3 {
   padding: 20px 0 150px 0;
+}
+
+.recipe {
+  background-image: url("../img/chocolate.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipe h2,
+.recipe h3,
+.recipe p {
+  color: white;
+}
+
+.recipe h2 {
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.recipe h3 {
+  font-size: 20px;
+}
+
+.recipe p {
+  font-size: 100px;
+  margin: 50px;
+}
+
+.recipe img {
+  border-radius: 50%;
+  height: 250px;
+}
+
+.recipe div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
 }
 
 .box {
