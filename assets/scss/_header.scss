@@ -23,6 +23,140 @@
 
 // ------------------------------------------------
 
+#navi{
+    display: block;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    padding: 60px 25px;
+    background-image: url("../img/choco_illast.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overfrow-scrolling: touch;
+    transition: all .5s;
+    z-index: 20;
+    opacity: 0;
+}
+
+#navi a{
+    color: white;
+    display: inline-block;
+    transition: .2s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+#navi a:hover{
+    color: lightblue;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.open #navi{
+    top: 0;
+    opacity: 1;
+}
+
+#navi ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#navi ul.nav-menu{
+    margin-bottom: 60px;
+    // border-top: solid 1px white;
+}
+
+#navi ul.nav-menu li{
+    margin-bottom: 60px;
+    // border-top: solid 1px white;
+    padding: 20px 0;
+    border-bottom: solid 1px white;
+}
+
+.nav-menu a{
+    text-decoration: none;
+}
+
+.toggle_btn{
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 45px;
+    width: 30px;
+    height: 30px;
+    transition: all .5s;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.toggle_btn span{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.toggle_btn span:nth-child(1){
+    top: 4px;
+}
+
+.toggle_btn span:nth-child(2){
+    top: 14px;
+}
+
+.toggle_btn span:nth-child(3){
+    bottom: 4px;
+}
+
+.open .toggle_btn span{
+    background-color: white;
+}
+
+.open .toggle_btn span:nth-child(1){
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+}
+
+.open .toggle_btn span:nth-child(2){
+   opacity: 0;
+}
+
+.open .toggle_btn span:nth-child(3){
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+}
+
+#mask{
+    display: none;
+    transition: all .5s;
+}
+
+.open #mask{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 10;
+    cursor: pointer;
+}
+
 
 
 

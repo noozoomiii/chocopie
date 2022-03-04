@@ -17,6 +17,143 @@
   position: relative;
 }
 
+#navi {
+  display: block;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  padding: 60px 25px;
+  background-image: url("../img/choco_illast.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overfrow-scrolling: touch;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 20;
+  opacity: 0;
+}
+
+#navi a {
+  color: white;
+  display: inline-block;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#navi a:hover {
+  color: lightblue;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.open #navi {
+  top: 0;
+  opacity: 1;
+}
+
+#navi ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#navi ul.nav-menu {
+  margin-bottom: 60px;
+}
+
+#navi ul.nav-menu li {
+  margin-bottom: 60px;
+  padding: 20px 0;
+  border-bottom: solid 1px white;
+}
+
+.nav-menu a {
+  text-decoration: none;
+}
+
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 25px;
+  right: 45px;
+  width: 30px;
+  height: 30px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+
+.open .toggle_btn span {
+  background-color: white;
+}
+
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(-315deg);
+  transform: translateY(10px) rotate(-315deg);
+}
+
+.open .toggle_btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(315deg);
+  transform: translateY(-10px) rotate(315deg);
+}
+
+#mask {
+  display: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: 10;
+  cursor: pointer;
+}
+
 .bg-box {
   position: absolute;
 }
@@ -75,18 +212,25 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
+  position: relative;
 }
 
 .fadein-item {
-  -webkit-animation: fadeInUp 0.8s linear 0s 1;
-          animation: fadeInUp 0.8s linear 0s 1;
+  -webkit-animation: fadeInUp 0.7s linear 0s 1;
+          animation: fadeInUp 0.7s linear 0s 1;
 }
 
 @-webkit-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.3;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
   }
   100% {
     opacity: 1;
@@ -98,8 +242,13 @@
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.3;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
   }
   100% {
     opacity: 1;
@@ -110,31 +259,32 @@
 
 .lineup-top {
   text-align: center;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  margin: 5%;
+  letter-spacing: 0.3em;
 }
 
 .lineup-title {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .lineup-sub {
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 1%;
   font-weight: lighter;
 }
 
 .lineup-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-image: url("https://yonimo.jp/images/bg_lineup.svg");
   background-repeat: no-repeat;
   background-position: right top;
   background-position-x: right;
   background-position-y: top;
   background-size: auto;
-  padding: 10% 0;
+  top: 0;
 }
 
 .slider {
@@ -144,10 +294,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -156,15 +306,128 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 33%;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  width: 30%;
+  text-align: center;
+  font-weight: lighter;
+  z-index: 1;
+}
+
+.animax1 {
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+.animax2 {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.animax3 {
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
 }
 
 .item-img img {
   width: 100%;
+  margin-bottom: 10%;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.item-img img:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.text1-text {
+  font-size: 22px;
+  line-height: 1.5rem;
+  margin-bottom: 8%;
+}
+
+.text2-text {
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
+.slider-btn {
+  max-width: 300px;
+  margin: 10% auto;
+}
+
+.btn-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  background-color: #AF8D31;
+  border: 1px solid #36160F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 45px 0 25px;
+  color: #36160F;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 1.3;
+  text-align: left;
+  text-decoration: none;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  z-index: 1;
+}
+
+.btn-buy::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-top: 2px solid #36160F;
+  border-right: 2px solid #36160F;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  margin-top: -6px;
+}
+
+.btn-buy:hover {
+  background-color: #36160F;
+  color: #AF8D31;
+}
+
+.btn-buy:hover::before {
+  border-top: 2px solid #AF8D31;
+  border-right: 2px solid #AF8D31;
+}
+
+.reverse-img {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  background-image: url("https://yonimo.jp/images/bg_lineup.svg");
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-position-x: left;
+  background-position-y: top;
+  background-size: auto;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
 }
 
 .section1 {
@@ -185,6 +448,7 @@
 
 .chocopie {
   text-align: center;
+  padding-top: 300px;
   padding-bottom: 250px;
   position: relative;
 }
@@ -199,6 +463,7 @@
 .chocopie_text2 {
   position: absolute;
   height: 200px;
+  top: 30%;
   top: -20%;
 }
 
@@ -228,6 +493,40 @@
   line-height: 1.5em;
   color: white;
   font-size: 25px;
+}
+
+
+.box {
+  height: 100vh;
+  position: relative;
+  background-image: url("../img/bg_point.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cat {
+  position: absolute;
+  bottom: 0;
+  background-image: url("https://yonimo.jp/images/img_cat.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.eat {
+  padding: 10%;
+}
+
+.howto {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: 'Wawati SC','HanziPen TC','Hannotate SC',sans-serif;
 }
 
 .eatme {
