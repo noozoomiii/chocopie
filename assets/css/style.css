@@ -585,19 +585,32 @@
   font-family: 'Sawarabi Mincho', serif;
 }
 
+.recipe h1,
 .recipe h2,
 .recipe h3,
 .recipe p {
   color: white;
 }
 
-.recipe h2 {
-  font-size: 30px;
+.recipe h1 {
+  font-size: 50px;
   margin-top: 100px;
 }
 
-.recipe h3 {
+.recipe h2 {
   font-size: 20px;
+  margin-top: 20px;
+}
+
+.recipe h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+.recipe h4 {
+  color: #d3ad07;
+  margin-bottom: 100px;
 }
 
 .recipe p {
@@ -620,7 +633,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 .box {
