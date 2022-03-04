@@ -21,16 +21,14 @@
     position: relative;
 }
 
-.fadein-item{
-    animation: fadeInUp 0.7s linear 0s 1;
-}
+
 
 @keyframes fadeInUp{
     0%{
         opacity: 0;
-        -webkit-transform: translateY(30px);
-        -ms-transform: translateY(30px);
-        transform: translateY(30px);
+        -webkit-transform: translateY(40px);
+        -ms-transform: translateY(40px);
+        transform: translateY(40px);
     }
     50%{
         opacity: 0.3;
@@ -46,6 +44,10 @@
     }
 }
 
+.js-fadein{
+    opacity: 0;
+}
+
 .lineup-top{
     text-align: center;
     margin: 5%;
@@ -55,14 +57,16 @@
 .lineup-title{
     font-weight: bold;
     font-size: 35px;
-    // font-family: 'Merienda', cursive;
-    // transform: scale(1, 0.8);
 }
 
 .lineup-sub{
     font-size: 13px;
     margin-top: 1%;
     font-weight: lighter;
+}
+
+.fadein-item{
+    animation: fadeInUp 0.7s linear 0s 1 forwards;
 }
 
 .lineup-img{
@@ -94,17 +98,6 @@
     z-index: 1;
 }
 
-.animax1{
-    animation-duration: 0.5s;
-}
-
-.animax2{
-    animation-duration: 1.5s;
-}
-
-.animax3{
-    animation-duration: 2.5s;
-}
 
 .item-img img{
     width: 100%;
