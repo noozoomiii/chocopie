@@ -30,6 +30,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
   -webkit-overfrow-scrolling: touch;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -130,6 +132,76 @@
 .open .toggle_btn span:nth-child(3) {
   -webkit-transform: translateY(-10px) rotate(315deg);
   transform: translateY(-10px) rotate(315deg);
+}
+
+.jump-up {
+  -webkit-animation-name: jump-up;
+  animation-name: jump-up;
+}
+
+@-webkit-keyframes jump-up {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  10% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump-up {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  10% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.jump-down {
+  -webkit-animation-name: jump-down;
+  animation-name: jump-down;
+}
+
+@-webkit-keyframes jump-down {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  90% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump-down {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  90% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 .bg-box {
@@ -400,6 +472,7 @@
 
 .product {
   background-image: url("../img/bg_point.png");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -512,30 +585,19 @@
   font-family: 'Sawarabi Mincho', serif;
 }
 
-.recipe h1,
 .recipe h2,
 .recipe h3,
 .recipe p {
   color: white;
 }
 
-.recipe h1 {
+.recipe h2 {
   font-size: 30px;
   margin-top: 100px;
 }
 
-.recipe h2 {
-  font-size: 20px;
-}
-
 .recipe h3 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.recipe h4 {
-  color: #d3ad07;
-  margin-bottom: 100px;
+  font-size: 20px;
 }
 
 .recipe p {
@@ -558,7 +620,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 100px 0;
+  margin-top: 100px;
 }
 
 .box {
