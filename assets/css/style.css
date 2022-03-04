@@ -399,15 +399,15 @@
   z-index: 0;
 }
 
-.section1 {
-  background-image: url("../img/chocolate.jpg");
-  background-attachment: fixed;
+.product {
+  background-image: url("../img/bg_point.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
 }
 
-.section1 h3 {
+.product h3 {
   text-align: center;
   color: white;
   font-size: 30px;
@@ -421,8 +421,11 @@
   position: relative;
 }
 
-.chocopie_img {
+.chocopie_img1,
+.chocopie_img2,
+.chocopie_img3 {
   height: 300px;
+  cursor: pointer;
 }
 
 .fukidashi1,
@@ -462,15 +465,20 @@
   font-size: 25px;
 }
 
-.eatme {
+.eatme,
+.soyummy,
+.good {
   position: absolute;
+  display: none;
+}
+
+.eatme {
   top: 0%;
   left: 60%;
   height: 100px;
 }
 
 .soyummy {
-  position: absolute;
   top: 10%;
   left: 58%;
   height: 110px;
@@ -479,13 +487,79 @@
 }
 
 .good {
-  position: absolute;
   top: -10%;
   left: 30%;
 }
 
 .chocopie3 {
   padding: 20px 0 150px 0;
+}
+
+.recipe {
+  background-image: url("../img/chocolate.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipe h1,
+.recipe h2,
+.recipe h3,
+.recipe p {
+  color: white;
+}
+
+.recipe h1 {
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.recipe h2 {
+  font-size: 20px;
+}
+
+.recipe h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.recipe h4 {
+  color: #d3ad07;
+  margin-bottom: 100px;
+}
+
+.recipe p {
+  font-size: 100px;
+  margin: 50px;
+}
+
+.recipe img {
+  border-radius: 50%;
+  height: 250px;
+}
+
+.recipe div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px 0;
 }
 
 .box {
