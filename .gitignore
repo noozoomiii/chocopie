@@ -1,4 +1,4 @@
 # exe ファイルは要らない
-/assets/css/style.css.map
-/assets/css/style.css
-/assets/scss/style.scss
+./assets/css/style.css.map
+./assets/css/style.css
+./  assets/scss/style.scss
