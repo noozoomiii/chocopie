@@ -30,6 +30,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
+  overflow-y: auto;
   -webkit-overfrow-scrolling: touch;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -130,6 +132,76 @@
 .open .toggle_btn span:nth-child(3) {
   -webkit-transform: translateY(-10px) rotate(315deg);
   transform: translateY(-10px) rotate(315deg);
+}
+
+.jump-up {
+  -webkit-animation-name: jump-up;
+  animation-name: jump-up;
+}
+
+@-webkit-keyframes jump-up {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  10% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump-up {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  10% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.jump-down {
+  -webkit-animation-name: jump-down;
+  animation-name: jump-down;
+}
+
+@-webkit-keyframes jump-down {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  90% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes jump-down {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  90% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 }
 
 .bg-box {
@@ -354,7 +426,6 @@
   text-decoration: none;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
-  z-index: 1;
 }
 
 .btn-buy::before {
@@ -399,15 +470,16 @@
   z-index: 0;
 }
 
-.section1 {
-  background-image: url("../img/chocolate.jpg");
+.product {
+  background-image: url("../img/bg_point.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
 }
 
-.section1 h3 {
+.product h3 {
   text-align: center;
   color: white;
   font-size: 30px;
@@ -421,8 +493,11 @@
   position: relative;
 }
 
-.chocopie_img {
+.chocopie_img1,
+.chocopie_img2,
+.chocopie_img3 {
   height: 300px;
+  cursor: pointer;
 }
 
 .fukidashi1,
@@ -462,15 +537,20 @@
   font-size: 25px;
 }
 
-.eatme {
+.eatme,
+.soyummy,
+.good {
   position: absolute;
+  display: none;
+}
+
+.eatme {
   top: 0%;
   left: 60%;
   height: 100px;
 }
 
 .soyummy {
-  position: absolute;
   top: 10%;
   left: 58%;
   height: 110px;
@@ -479,13 +559,68 @@
 }
 
 .good {
-  position: absolute;
   top: -10%;
   left: 30%;
 }
 
 .chocopie3 {
   padding: 20px 0 150px 0;
+}
+
+.recipe {
+  background-image: url("../img/chocolate.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recipe h2,
+.recipe h3,
+.recipe p {
+  color: white;
+}
+
+.recipe h2 {
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.recipe h3 {
+  font-size: 20px;
+}
+
+.recipe p {
+  font-size: 100px;
+  margin: 50px;
+}
+
+.recipe img {
+  border-radius: 50%;
+  height: 250px;
+}
+
+.recipe div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
 }
 
 .box {
