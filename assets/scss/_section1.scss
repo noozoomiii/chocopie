@@ -5,11 +5,19 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    h3{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        padding: 150px 0;
+        line-height: 1.5em;
+    }
 }
 
 .chocopie{
     text-align: center;
-    padding-top: 300px;
+    padding-bottom: 250px;
     position: relative;
 }
 
@@ -23,18 +31,16 @@
 .chocopie_text2{
     position: absolute;
     height: 200px;
-    top: 30%;
+    top: -20%;
 }
 
 .fukidashi1,
 .chocopie_text1{  
-    // top: 0%;
     left: 15%;
 }
 
 .fukidashi2,
 .chocopie_text2{
-    // top: 0%;
     left: 50%;
 }
 
@@ -48,4 +54,29 @@
     line-height: 1.5em;
     color: white;
     font-size: 25px;
+}
+
+.eatme{
+    position: absolute;
+    top: 0%;
+    left: 60%;
+    height: 100px;
+}
+
+.soyummy{
+    position: absolute;
+    top: 10%;
+    left: 58%;
+    height: 110px;
+    transform: rotate( 30deg );
+}
+
+.good{
+    position: absolute;
+    top: -10%;
+    left: 30%;
+}
+
+.chocopie3{
+    padding: 20px 0 150px 0;
 }
