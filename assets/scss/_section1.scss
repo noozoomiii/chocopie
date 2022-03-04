@@ -1,6 +1,6 @@
 .section1{
     // height: 100%;
-    background-image: url('../img/');
+    background-image: url('../img/bg_point.png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,8 +21,11 @@
     position: relative;
 }
 
-.chocopie_img{
+.chocopie_img1,
+.chocopie_img2,
+.chocopie_img3{
     height: 300px;
+    cursor: pointer;
 }
 
 .fukidashi1,
@@ -56,15 +59,20 @@
     font-size: 25px;
 }
 
-.eatme{
+.eatme,
+.soyummy,
+.good{
     position: absolute;
+    display: none;
+}
+
+.eatme{
     top: 0%;
     left: 60%;
     height: 100px;
 }
 
 .soyummy{
-    position: absolute;
     top: 10%;
     left: 58%;
     height: 110px;
@@ -72,7 +80,6 @@
 }
 
 .good{
-    position: absolute;
     top: -10%;
     left: 30%;
 }
