@@ -568,7 +568,7 @@
 }
 
 .recipe {
-  background-image: url("../img/chocorecipe.jpeg");
+  background-image: url("../img/chocoback.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -582,13 +582,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Sawarabi Mincho', serif;
-}
-
-.recipe h1,
-.recipe h2,
-.recipe h3,
-.recipe p {
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
   color: white;
 }
 
@@ -599,23 +593,26 @@
 
 .recipe h2 {
   font-size: 20px;
-  margin-top: 20px;
+  padding: 20px 0;
 }
 
 .recipe h3 {
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 18px;
+  padding: 20px 0;
   line-height: 1.5em;
 }
 
 .recipe h4 {
-  color: #d3ad07;
-  margin-bottom: 100px;
+  color: #AF8D31;
+  margin: 20px 0 100px 0;
+  font-size: 18px;
 }
 
 .recipe p {
   font-size: 100px;
   margin: 50px;
+  font-weight: bold;
 }
 
 .recipe img {
@@ -633,6 +630,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 100px 0;
+  margin: 50px 0;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  color: white;
+  background-color: #140806;
 }
 /*# sourceMappingURL=style.css.map */
