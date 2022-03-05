@@ -11,13 +11,13 @@
 
 
 
-// ----------------------------jQuery---------------------------------
+// --------------------------------------------------jQuery-------------------------------------------------------------
 $(function () {
 
     // -----------------------------------background画像のプラグイン--------------------------------------
     $(".bg-slider").bgSwitcher({
         images: ["./assets/img/chocopie_one.png", "./assets/img/waifu_choco.png", "./assets/img/waifu_choco2.png"],
-        interval: 5000,
+        interval: 6000,
         loop: true,
         shuffle: true,
         effect: "drop",
@@ -59,54 +59,77 @@ $(function () {
 
     // ---------------------------------------------------------------------------------------------
 
-    // ----クリックのモーダルプラグイン----
-    $(".shake").modaal({
-        type: "image",
-    });
-    // -------------------------
+    // $(".toggle_btn").on("click",function(){
+    //     // 現在地を取る---
+    //     let jump_now = $(window).scrollTop();
+    //     // 画面の高さを取る---
+    //     let jump_window = $(window).height();
+    //     // 画面下の位置を取る---
+    //     let jump_bottom = jump_now + jump_window;
+    //     // #naviの位置を取る---
+    //     let jump_navi = $("#navi").offset().top;
+        
+    //     if(jump_navi == -573.40625){
+    //         $("#navi").addClass("jump-down");
+    //     }
+    // })
+    let count = 0;
+    $(".toggle_btn").on("click",function(){
+            count = count + 1;
+            if(count % 2 == 1){
+                $("#navi").removeClass("jump-up2");
+                $("#navi").addClass("jump-up");
+            }else{
+                $("#navi").removeClass("jump-up");
+                $("#navi").addClass("jump-up2");
+            }
+    })
+
+
+    
+
+    // $(".toggle_btn").on("click",function(){
+    //     // 現在地を取る---
+    //     let jump_now = $(window).scrollTop();
+    //     // 画面の高さを取る---
+    //     let jump_window = $(window).height();
+    //     // 画面下の位置を取る---
+    //     let jump_bottom = jump_now + jump_window;
+    //     // #naviの位置を取る---
+    //     let jump_navi = $("#navi").offset().top;
+        
+    //     if(jump_navi == 0){
+    //         $("#navi").addClass("jump-up");
+    //     }
+    // })
+
+
+    // -------------------------トグルメニュー--------------------------------
 
     $(".toggle_btn").on("click",function(){
+
+        // ---トグルをクリックした時に#headerが.openを持っていたら---
+            // ---オープンを外す(閉じる)---    
         if($("#header").hasClass("open")){
             $("#header").removeClass("open");
+
+            // ---オープンを付ける(開ける)---
         }else{
             $("#header").addClass("open");
         }
     })
 
-    // $("#mask").on("click",function(){
-    //     $("#header").removeClass("open");
-    // });
-
-    // $("#navi a").on("click",function(){
-    //     $("#header").removeClass("open");
-    // })
-
-    $(".toggle_btn").on("click",function(){
-        console.log($("#navi").height());
-    })
+    // --------------------------------------------------------------------
 
 
 
-    // let windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
-    // if(windowwidth > 768){
-    //     let responsiveImage = [
-    //         {src: "./assets/img/waifu_choco2.png"},
-    //         {src: "./assets/img/chocopie_one.png"},
-    //         {src: "./assets/img/waifu_choco.png"}
-    //     ];
-    // }
+    // ---------トグルのリンクを押したらトグルを閉める------------
 
-    // $("#slider").vegas({
-    //     overlay: true,
-    //     transition: "blur",
-    //     transitionDuration: 2000,
-    //     delay: 10000,
-    //     animationDuration: 20000,
-    //     animation: "kenburns",
-    //     slodes: responsiveImage,
-    // });
+    $("#navi a").on("click",function(){
+        $("#header").removeClass("open");
+    });
 
-    // ------------------------------------------------------------------------------------------------
+    // -----------------------------------------------------
 
 
     // ---------------------1文字ずつ出てくるアニメーション-------------------------

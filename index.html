@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>chocopie</title>
@@ -17,10 +16,6 @@
         <div class="bg-slider">
             <div class="bg-box">
                 <p class="bg-title">世にもおいしいチョコパイ</p>
-                <!-- <div class="new">
-                <img src="./assets/img/e1013_3.png" alt="">
-                <p class="bg-title2">New</p>
-                </div> -->
             </div>
             <p class="bg-text">
                 本格チョコを<br>
@@ -31,9 +26,9 @@
         </div>
         <nav id="navi">
             <ul class="nav-menu">
-                <li><a href="#s">Search</a></li>
-                <li><a href="#sub-title">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#line-up">LINE UP</a></li>
+                <li><a href="#rerecipe">Recipe</a></li>
             </ul>
         </nav>
         <div class="toggle_btn">
@@ -44,12 +39,12 @@
     </header>
 
     <body>
-        <section class="product">
+        <section class="product" id="about">
             <h3 class="js-fadein">名前負けしていない、<br>それほどにおいしい。</h3>
             <div class="chocopie">
                 <img src="./assets/img/chocopie_choco.png" alt="chocopie_choco" class="chocopie_img1 js-fadein">
                 <img src="./assets/img/fukidashi1.png" alt="fukidashi1" class="fukidashi1 js-fadein">
-                <img src="./assets/img/eatme.svg" alt="eatme" class="eatme">
+                <img src="https://yonimo.jp/images/txt_eatme.svg" alt="eatme" class="eatme">
                 <div class="chocopie_text1 js-fadein">
                     <p>パイ生地を何層にも重ねることで<br>生まれたサクサクした食感</p>
                 </div>
@@ -72,7 +67,7 @@
                     <p>クッキー30％増量！<br>ザクザク感アップ！</p>
                 </div>
             </div>
-        <div class="lineup">
+        <div class="lineup" id="line-up">
             <div class="lineup-img"></div>
             <div class="lineup-top">
                 <h2 class="lineup-title js-fadein">LINE UP</h2>
@@ -81,7 +76,7 @@
             <div class="slider">
                 <div class="slider-item">
                     <div class="item-img js-fadein">
-                        <img src="./assets/img/chocopie_choco.png" alt="" class="shake">
+                        <a href="./link.html" target="_blank"><img src="./assets/img/chocopie_choco.png" alt="" class="shake"></a>
                     </div>
                     <div class="item-text1 js-fadein">
                         <p class="text1-text">
@@ -99,7 +94,7 @@
                 </div>
                 <div class="slider-item">
                     <div class="item-img js-fadein">
-                        <img src="./assets/img/choco_cream.png" alt="" class="shake">
+                        <a href="./link2.html" target="_blank"><img src="./assets/img/choco_cream.png" alt="" class="shake"></a>
                     </div>
                     <div class="item-text1 js-fadein">
                         <p class="text1-text">
@@ -117,7 +112,7 @@
                 </div>
                 <div class="slider-item">
                     <div class="item-img js-fadein">
-                        <img src="./assets/img/image-removebg-preview.png" alt="" class="shake">
+                        <a href="./link3.html" target="_blank"><img src="./assets/img/image-removebg-preview.png" alt="" class="shake"></a>
                     </div>
                     <div class="item-text1 js-fadein">
                         <p class="text1-text">
@@ -140,32 +135,28 @@
             <div class="reverse-img"></div>
         </div>
 
-        <section class="recipe">
-            <h1 class="js-fadein">RECIPE</h1>
-            <h2 class="js-fadein">世にもおいしいレシピ</h2>
-            <h3 class="js-fadein">あったか×ひんやり＝禁断の組み合わせ</h3>
+        <section class="recipe" id="rerecipe">
+            <h1>RECIPE</h1>
+            <h2>世にもおいしいレシピ</h2>
             
-            <div class="js-fadein">
+            <div>
                 <img src="./assets/img/choco_recipe.jpeg" alt="choco_recipe">
                 <p>×</p>
                 <img src="./assets/img/mctwist.jpeg" alt="mctwist">
             </div>
-            <h3 class="js-fadein">世にもおいしい三角チョコパイとソフトツイストを組み合わせると<br>あたらしい美味しさが発見できます</h3>
-            <h3 class="js-fadein">冷凍三角チョコパイも最高</h3>
-            
-            <h4 class="js-fadein">#世にもおいしい</h4>
+            <h3>世にもおいしい三角チョコパイとソフトツイストを組み合わせると<br>あたらしい美味しさが発見できます</h3>
+            <h4>#世にもおいしい</h4>
+    
+    
         </section>
 
 
     </body>
     <footer>
 
-        <p>&copy; chocopie.</p>
-
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/jquery.bgswitcher.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
     <script src="./assets/js/nozomi.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

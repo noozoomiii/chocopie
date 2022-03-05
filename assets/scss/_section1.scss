@@ -1,11 +1,12 @@
 .product{
-    background-image: url('../img/bg_point.png');
+    // height: 250vh;
+    // width: 100vw;
+    background-image: url('../img/chocopie_bg_pointtt\ .png');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
-
 
     h3{
         text-align: center;
@@ -93,15 +94,22 @@
 
 
 .recipe{
-    background-image: url('../img/chocoback.jpg');
+    background-image: url('../img/chocorecipe.jpeg');
+    // background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
-    color: white;
+    font-family: 'Sawarabi Mincho', serif;
+
+    h1,
+    h2,
+    h3,
+    p{
+        color: white;
+    }
 
     h1{
         font-size: 50px;
@@ -110,26 +118,23 @@
 
     h2{
         font-size: 20px;
-        padding: 20px 0;
+        margin-top: 20px;
     }
 
     h3{
         text-align: center;
-        font-size: 18px;
-        padding: 20px 0;
+        margin-bottom: 20px;
         line-height: 1.5em;
     }
 
     h4{
-        color: #AF8D31;
-        margin:  20px 0 100px 0;
-        font-size: 18px;
+        color: rgb(211, 173, 7);
+        margin-bottom: 100px;
     }
 
     p{
         font-size: 100px;
         margin: 50px;
-        font-weight: bold;
     }
 
     img{
@@ -141,16 +146,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 50px 0;
+        margin: 100px 0;
     }
 
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    color: white;
-    background-color: #140806;
 }
