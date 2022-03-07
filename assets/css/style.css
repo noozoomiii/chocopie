@@ -937,6 +937,12 @@
   height: 100px;
 }
 
+@media screen and (max-width: 500px) {
+  .eatme {
+    height: 50px;
+  }
+}
+
 .soyummy {
   top: 10%;
   left: 58%;
@@ -945,9 +951,33 @@
           transform: rotate(30deg);
 }
 
+@media screen and (max-width: 500px) {
+  .soyummy {
+    height: 50px;
+  }
+}
+
 .good {
   top: -10%;
   left: 30%;
+}
+
+@media screen and (max-width: 500px) {
+  .good {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .good {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .good {
+    height: 150px;
+  }
 }
 
 .chocopie3 {
@@ -1003,12 +1033,18 @@
 
 .recipe p {
   font-size: 100px;
-  margin: 50px;
+  margin: 20px;
 }
 
 @media screen and (max-width: 500px) {
   .recipe p {
     font-size: 80px;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .recipe p {
     margin: 5px;
   }
 }
@@ -1024,17 +1060,73 @@
   }
 }
 
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .recipe img {
+    height: 200px;
+  }
+}
+
 .recipe .chocopie_ice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 95%;
   margin: 50px 2.5%;
+}
+
+@media screen and (max-width: 500px) {
+  .recipe .chocopie_ice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .recipe .chocopie_ice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .recipe .chocopie_ice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .recipe .chocopie_ice .chocopie_left, .recipe .chocopie_ice .chocopie_right {
   width: 45%;
   margin: 0 2.5%;
+}
+
+@media screen and (max-width: 500px) {
+  .recipe .chocopie_ice .chocopie_left, .recipe .chocopie_ice .chocopie_right {
+    width: 80%;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .recipe .chocopie_ice .chocopie_left, .recipe .chocopie_ice .chocopie_right {
+    width: 85%;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .recipe .chocopie_ice .chocopie_left, .recipe .chocopie_ice .chocopie_right {
+    width: 85%;
+  }
 }
 
 .recipe .chocopie_ice .chocopie_left .chocopie_ice_img, .recipe .chocopie_ice .chocopie_right .chocopie_ice_img {
@@ -1051,6 +1143,7 @@
 
 .recipe .chocopie_ice .chocopie_left .chocopie_ice_text, .recipe .chocopie_ice .chocopie_right .chocopie_ice_text {
   font-size: 15px;
+  line-height: 1.5em;
 }
 
 .recipe .change {
@@ -1058,6 +1151,33 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 500px) {
+  .recipe .change {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .recipe .change {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .recipe .change {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer {
