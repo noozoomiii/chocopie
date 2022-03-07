@@ -122,6 +122,9 @@
     top: 0%;
     left: 60%;
     height: 100px;
+    @include sp-screen{
+        height: 50px;
+    }
 }
 
 .soyummy{
@@ -129,11 +132,23 @@
     left: 58%;
     height: 110px;
     transform: rotate( 30deg );
+    @include sp-screen{
+        height: 50px;
+    }
 }
 
 .good{
     top: -10%;
     left: 30%;
+    @include sp-screen{
+        height: 60px;
+    }
+    @include tab-screen{
+        height: 100px;
+    }
+    @include pc-screen{
+        height: 150px;
+    }
 }
 
 .chocopie3{
@@ -185,9 +200,12 @@
 
     p{
         font-size: 100px;
-        margin: 50px;
+        margin: 20px;
         @include sp-screen{
             font-size: 80px;
+            margin: 5px;
+        }
+        @include tab-screen{
             margin: 5px;
         }
     }
@@ -198,16 +216,40 @@
         @include sp-screen{
             height: 150px;
         }
+        @include tab-screen{
+            height: 200px;
+        }
     }
 
     .chocopie_ice{
         display: flex;
+        align-items: center;
         width: 95%;
         margin: 50px 2.5%;
+        @include sp-screen{
+            flex-direction: column;
+        }
+        @include tab-screen{
+            flex-direction: column;
+        }
+        @include pc-screen{
+            flex-direction: column;
+        }
 
         .chocopie_left, .chocopie_right{
             width: 45%;
             margin: 0 2.5%;
+            @include sp-screen{
+                width: 80%;
+                padding-top: 50px;
+            }
+            @include tab-screen{
+                width: 85%;
+                padding-top: 50px;
+            }
+            @include pc-screen{
+                width: 85%;
+            }
 
             .chocopie_ice_img{
                 display: flex;
@@ -217,20 +259,23 @@
 
             .chocopie_ice_text{
                 font-size: 15px;
+                line-height: 1.5em;
             }
         }
     }
 
     .change{
         flex-direction: row-reverse;
+        @include sp-screen{
+            flex-direction: column;
+        }
+        @include tab-screen{
+            flex-direction: column;
+        }
+        @include pc-screen{
+            flex-direction: column;
+        }
     }
-
-    
-
-    
-
-    
-
 }
 
 
