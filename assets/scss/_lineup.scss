@@ -29,31 +29,17 @@
     display: flex;
     flex-direction: column;
     font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
-    position: relative;
+    // position: relative;
 
     .lineup-img{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: url("../img/choco_bg_lineup.svg");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-position-x: right;
-        background-position-y: top;
-        background-size: auto;
-        top: 0;
-        @include tab2-screen{
-            background-size: 40%;
+        position: relative;
+        img{
+            width: 70%;
+            margin-left: auto;
+            display: block;
+            min-width: 150px;
+            max-width: 500px;
         }
-        @include tab-screen{
-            background-size: 40%;
-        }
-        @include mobile2-screen{
-            background-size: 50%;
-        }
-        @include mobile-screen{
-            background-size: 60%;
-        } 
     }
 
 
@@ -206,10 +192,7 @@
     
     .slider-btn{
         max-width: 300px;
-        margin: 10% auto;
-        // @include tab2-screen{
-        //     background-size: 40%;
-        // }
+        margin: 10% auto 7% auto;
         @include tab-screen{
             margin: 15% auto;
         }
@@ -280,31 +263,15 @@
     }
 
     .reverse-img{
-        position: absolute;
-        bottom: 0;
-        left: 0%;
-        background-image: url("../img/choco_bg_lineup.svg");
-        transform: scaleY(-1);
-        background-repeat: no-repeat;
-        background-position: left top;
-        background-position-x: left;
-        background-position-y: top;
-        background-size: auto;
-        height: 100%;
-        width: 100%;
-        z-index: 0;
-        @include tab2-screen{
-            background-size: 40%;
+        position: relative;
+        transform: scaleY(-1.01);
+        img{
+            width: 70%;
+            margin-right: auto;
+            display: block;
+            min-width: 150px;
+            max-width: 500px;
         }
-        @include tab-screen{
-            background-size: 40%;
-        }
-        @include mobile2-screen{
-            background-size: 50%;
-        }
-        @include mobile-screen{
-            background-size: 60%;
-        } 
     }
     
 }

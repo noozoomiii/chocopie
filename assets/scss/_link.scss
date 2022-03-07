@@ -41,6 +41,9 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
+    @include mobile-screen{
+        height: 100vh;
+    }
 
     .link-box{
         margin: 0 auto;
@@ -53,6 +56,9 @@ img{
         
         @include column-screen{
             flex-direction: column;
+        }
+        @include mobile-screen{
+            padding: 30% 0 10% 0;
         }
 
         .link-img{
@@ -184,6 +190,10 @@ img{
         max-width: 300px;
         margin: 5% auto 0 auto;
         padding-bottom: 5%;
+        @include mobile-screen{
+            // padding-bottom: 19.5%;
+            max-width: 230px;
+        } 
 
         .btn-buy2{
             display: flex;
@@ -203,6 +213,10 @@ img{
             text-align: left;
             text-decoration: none;
             transition-duration: 0.5s;
+            @include mobile-screen{
+                height: 40px;
+                font-size: 12px;
+            } 
         
             &::before{
                 content: '';
@@ -216,6 +230,11 @@ img{
                 top: 50%;
                 right: 25px;
                 margin-top: -6px;
+                @include mobile-screen{
+                    width: 6px;
+                    height: 6px;
+                    top: 55%;
+                } 
             }
         
             &:hover{
