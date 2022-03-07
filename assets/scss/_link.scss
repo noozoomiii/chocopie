@@ -1,33 +1,4 @@
 
-@mixin mobile-screen{
-    @media screen and (max-width:500px) {
-        @content;
-    }
-}
-
-@mixin mobile2-screen{
-    @media screen and (min-width:501px) and (max-width:767px) {
-        @content;
-    }
-}
-
-@mixin tab-screen{
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        @content;
-    }
-}
-
-@mixin tab2-screen{
-    @media screen and (min-width: 1024px) and (max-width: 1240px) {
-        @content;
-    }
-}
-
-@mixin column-screen{
-    @media screen and (max-width: 1023px) {
-        @content;
-    }
-}
 
 img{
     max-width: 100%;
