@@ -233,7 +233,9 @@
 }
 
 #navi .nav-menu li a:hover {
-  color: lightblue;
+  color: #528496;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .toggle_btn {
@@ -377,44 +379,18 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
-  position: relative;
 }
 
 .lineup .lineup-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/choco_bg_lineup.svg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-position-x: right;
-  background-position-y: top;
-  background-size: auto;
-  top: 0;
+  position: relative;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1240px) {
-  .lineup .lineup-img {
-    background-size: 40%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .lineup .lineup-img {
-    background-size: 40%;
-  }
-}
-
-@media screen and (min-width: 501px) and (max-width: 767px) {
-  .lineup .lineup-img {
-    background-size: 50%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .lineup .lineup-img {
-    background-size: 60%;
-  }
+.lineup .lineup-img img {
+  width: 70%;
+  margin-left: auto;
+  display: block;
+  min-width: 150px;
+  max-width: 500px;
 }
 
 .lineup .lineup-top {
@@ -660,7 +636,7 @@
 
 .lineup .slider-btn {
   max-width: 300px;
-  margin: 10% auto;
+  margin: 10% auto 7% auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -752,44 +728,17 @@
 }
 
 .lineup .reverse-img {
-  position: absolute;
-  bottom: 0;
-  left: 0%;
-  background-image: url("../img/choco_bg_lineup.svg");
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
-  background-repeat: no-repeat;
-  background-position: left top;
-  background-position-x: left;
-  background-position-y: top;
-  background-size: auto;
-  height: 100%;
-  width: 100%;
-  z-index: 0;
+  position: relative;
+  -webkit-transform: scaleY(-1.01);
+          transform: scaleY(-1.01);
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1240px) {
-  .lineup .reverse-img {
-    background-size: 40%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .lineup .reverse-img {
-    background-size: 40%;
-  }
-}
-
-@media screen and (min-width: 501px) and (max-width: 767px) {
-  .lineup .reverse-img {
-    background-size: 50%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .lineup .reverse-img {
-    background-size: 60%;
-  }
+.lineup .reverse-img img {
+  width: 70%;
+  margin-right: auto;
+  display: block;
+  min-width: 150px;
+  max-width: 500px;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -1242,7 +1191,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
-  background-color: black;
+  background-color: #121212;
   color: white;
 }
 
@@ -1258,6 +1207,12 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .link {
+    height: 100vh;
+  }
 }
 
 .link .link-box {
@@ -1282,6 +1237,12 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .link .link-box {
+    padding: 30% 0 10% 0;
   }
 }
 
@@ -1471,6 +1432,12 @@ img {
   padding-bottom: 5%;
 }
 
+@media screen and (max-width: 500px) {
+  .link .slider-btn2 {
+    max-width: 230px;
+  }
+}
+
 .link .slider-btn2 .btn-buy2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1499,6 +1466,13 @@ img {
           transition-duration: 0.5s;
 }
 
+@media screen and (max-width: 500px) {
+  .link .slider-btn2 .btn-buy2 {
+    height: 40px;
+    font-size: 12px;
+  }
+}
+
 .link .slider-btn2 .btn-buy2::before {
   content: '';
   width: 8px;
@@ -1512,6 +1486,14 @@ img {
   top: 50%;
   right: 25px;
   margin-top: -6px;
+}
+
+@media screen and (max-width: 500px) {
+  .link .slider-btn2 .btn-buy2::before {
+    width: 6px;
+    height: 6px;
+    top: 55%;
+  }
 }
 
 .link .slider-btn2 .btn-buy2:hover {
