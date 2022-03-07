@@ -200,12 +200,36 @@
         }
     }
 
-    div{
+    .chocopie_ice{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 0;
+        width: 95%;
+        margin: 50px 2.5%;
+
+        .chocopie_left, .chocopie_right{
+            width: 45%;
+            margin: 0 2.5%;
+
+            .chocopie_ice_img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .chocopie_ice_text{
+                font-size: 15px;
+            }
+        }
     }
+
+    .change{
+        flex-direction: row-reverse;
+    }
+
+    
+
+    
+
+    
 
 }
 

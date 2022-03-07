@@ -1075,17 +1075,40 @@
   }
 }
 
-.recipe div {
+.recipe .chocopie_ice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 95%;
+  margin: 50px 2.5%;
+}
+
+.recipe .chocopie_ice .chocopie_left, .recipe .chocopie_ice .chocopie_right {
+  width: 45%;
+  margin: 0 2.5%;
+}
+
+.recipe .chocopie_ice .chocopie_left .chocopie_ice_img, .recipe .chocopie_ice .chocopie_right .chocopie_ice_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recipe .chocopie_ice .chocopie_left .chocopie_ice_text, .recipe .chocopie_ice .chocopie_right .chocopie_ice_text {
+  font-size: 15px;
+}
+
+.recipe .change {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 footer {
