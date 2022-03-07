@@ -1,11 +1,41 @@
 
+@mixin mobile-screen{
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
+
+@mixin mobile2-screen{
+    @media screen and (min-width:501px) and (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin tab-screen{
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin tab2-screen{
+    @media screen and (min-width: 1024px) and (max-width: 1240px) {
+        @content;
+    }
+}
+
+@mixin column-screen{
+    @media screen and (max-width: 1023px) {
+        @content;
+    }
+}
+
 img{
     max-width: 100%;
 }
 
 .link{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/pablo-merchan-montes-SCbq6uKCyMY-unsplash.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -14,37 +44,87 @@ img{
 
     .link-box{
         margin: 0 auto;
-        padding: 7% 0 4% 0;
+        padding: 10% 0 4% 0;
         display: flex;
         align-items: center;
         justify-content: center;
         color: white;
         width: 80%;
+        
+        @include column-screen{
+            flex-direction: column;
+        }
 
         .link-img{
-            width: 50%;
+            width: 45%;
+            margin: 0 auto;
+            @include column-screen{
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            img{
+                width: 100%;
+                @include column-screen{
+                    width: 80%;
+                    margin: 0 10%;
+                }
+            }
         }
 
         .link-text{
-            width: 50%;
+            width: 45%;
+            margin: 0 auto;
+            @include column-screen{
+                width: 80%;
+                margin: 0 10%;
+            }
 
             .link-title{
                 font-size: 40px;
                 line-height: 3rem;
+                margin: 5% auto;
+                @include column-screen{
+                    text-align: center;
+                }
+                @include tab-screen{
+                    font-size: 35px;
+                    line-height: 2.7rem;
+                }
+                @include mobile2-screen{
+                    font-size: 30px;
+                    line-height: 2.3rem;
+                }
+                @include mobile-screen{
+                    font-size: 20px;
+                    line-height: 1.5rem;
+                }
             }
 
             .link-describe{
-                margin: 5% auto;
+                margin: 10% auto;
 
                 .describe-text{
                     font-size: 18px;
                     line-height: 30px;
+                    @include tab-screen{
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                    @include mobile2-screen{
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    @include mobile-screen{
+                        font-size: 10px;
+                        line-height: 15px;
+                    }
                 }
             }
 
             .calorie{
                 width: 70%;
-                margin: 0 auto;
+                margin: 5% auto;
             
                 dl{
                     display: flex;
@@ -53,15 +133,27 @@ img{
                     flex-wrap: wrap;
                     text-align: center;
                     font-size: 15px;
+                    @include mobile2-screen{
+                        font-size: 12px;
+                    }
+                    @include mobile-screen{
+                        font-size: 8px;
+                    }
             
                     dt{
                         width: 30%;
                         margin: 1% auto;
+                        @include column-screen{
+                            width: 50%;
+                        }
                     }
             
                     dd{
                         width: 70%;
                         margin: 1% auto;
+                        @include column-screen{
+                            width: 50%;
+                        }
                     }
                     
                 }
@@ -69,11 +161,20 @@ img{
             }
 
             .price{
-                margin-top: 7%;
+                margin-top: 15%;
 
                 .price-text{
                     font-size: 30px;
                     font-weight: bold;
+                    @include column-screen{
+                        text-align: end;
+                    }
+                    @include mobile2-screen{
+                        font-size: 25px;
+                    }
+                    @include mobile-screen{
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -81,7 +182,8 @@ img{
 
     .slider-btn2{
         max-width: 300px;
-        margin: 0 auto;
+        margin: 5% auto 0 auto;
+        padding-bottom: 5%;
 
         .btn-buy2{
             display: flex;

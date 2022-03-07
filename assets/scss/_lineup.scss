@@ -1,4 +1,27 @@
 
+@mixin mobile-screen{
+    @media screen and (max-width:500px) {
+        @content;
+    }
+}
+
+@mixin mobile2-screen{
+    @media screen and (min-width:501px) and (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin tab-screen{
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+@mixin tab2-screen{
+    @media screen and (min-width: 1024px) and (max-width: 1240px) {
+        @content;
+    }
+}
 
 .lineup{
     background-color: #AF8D31;
@@ -19,22 +42,63 @@
         background-position-y: top;
         background-size: auto;
         top: 0;
+        @include tab2-screen{
+            background-size: 40%;
+        }
+        @include tab-screen{
+            background-size: 40%;
+        }
+        @include mobile2-screen{
+            background-size: 50%;
+        }
+        @include mobile-screen{
+            background-size: 60%;
+        } 
     }
+
 
     .lineup-top{
         text-align: center;
         margin: 5%;
         letter-spacing: 0.3em;
+        @include tab2-screen{
+            margin: 7%;
+        }
+        @include tab-screen{
+            margin: 15% auto 10% auto;
+        }
+        @include mobile2-screen{
+            margin: 20% auto 15% auto;
+        }
+        @include mobile-screen{
+            margin: 30% auto 20% auto;
+        } 
+        
 
         .lineup-title{
             font-weight: bold;
             font-size: 35px;
+            @include tab-screen{
+                font-size: 40px;
+            }
+            @include mobile2-screen{
+                font-size: 40px;
+            }
+            @include mobile-screen{
+                font-size: 30px;
+            } 
         }
 
         .lineup-sub{
             font-size: 13px;
             margin-top: 1%;
             font-weight: lighter;
+            @include tab-screen{
+                font-size: 16px;
+            }
+            @include mobile2-screen{
+                font-size: 16px;
+            }
         }
     }
 
@@ -44,6 +108,16 @@
         justify-content: space-between;
         width: 90%;
         margin: 0 auto;
+    
+        @include tab-screen{
+            flex-direction: column;
+        }
+        @include mobile2-screen{
+            flex-direction: column;
+        }
+        @include mobile-screen{
+            flex-direction: column;
+        } 
 
         .slider-item{
             flex-direction: column;
@@ -51,11 +125,32 @@
             text-align: center;
             font-weight: lighter;
             z-index: 1;
+            @include tab-screen{
+                width: 80%;
+                margin: 10% auto;
+            }
+            @include mobile2-screen{
+                width: 80%;
+                margin: 10% auto;
+            }
+            @include mobile-screen{
+                width: 80%;
+                margin: 10% auto;
+            } 
 
             .item-img img{
                 width: 100%;
                 margin-bottom: 10%;
                 transition-duration: 0.4s;
+                @include tab-screen{
+                    width: 80%;
+                }
+                @include mobile2-screen{
+                    width: 90%;
+                }
+                @include mobile-screen{
+                    width: 100%;
+                } 
 
                 &:hover{
                     opacity: 0.8;
@@ -69,11 +164,42 @@
                 font-size: 22px;
                 line-height: 1.5rem;
                 margin-bottom: 8%;
+                @include tab-screen{
+                    font-size: 27px;
+                    line-height: 2.1rem;
+                    margin-bottom: 5%;
+                }
+                @include mobile2-screen{
+                    font-size: 23px;
+                    line-height: 2rem;
+                    margin-bottom: 5%;
+                }
+                @include mobile-screen{
+                    font-size: 18px;
+                    line-height: 1.3rem;
+                    margin-bottom: 5%;
+                } 
             }
 
             .text2-text{
                 font-size: 15px;
                 line-height: 1.5rem;
+                @include tab2-screen{
+                    font-size: 12px;
+                    line-height: 1.5rem;
+                }
+                @include tab-screen{
+                    font-size: 16px;
+                    line-height: 1.5rem;
+                }
+                @include mobile2-screen{
+                    font-size: 14px;
+                    line-height: 1.5rem;
+                }
+                @include mobile-screen{
+                    font-size: 10px;
+                    line-height: 1.2rem;
+                }
             }
         }
     }
@@ -81,6 +207,19 @@
     .slider-btn{
         max-width: 300px;
         margin: 10% auto;
+        // @include tab2-screen{
+        //     background-size: 40%;
+        // }
+        @include tab-screen{
+            margin: 15% auto;
+        }
+        @include mobile2-screen{
+            margin: 20% auto;   
+        }
+        @include mobile-screen{
+            margin: 25% auto;
+            max-width: 230px;
+        } 
 
         .btn-buy{
             display: flex;
@@ -101,6 +240,11 @@
             text-decoration: none;
             transition-duration: 0.5s;
             z-index: 1;
+            @include mobile-screen{
+                height: 40px;
+                font-size: 12px;
+            } 
+            
 
             &::before{
                 content: '';
@@ -114,6 +258,11 @@
                 top: 50%;
                 right: 25px;
                 margin-top: -6px;
+                @include mobile-screen{
+                    width: 6px;
+                    height: 6px;
+                    top: 55%;
+                } 
             }
 
             &:hover{
@@ -125,6 +274,8 @@
                     border-right: 2px solid #AF8D31;
                 }
             }
+
+            
         }
     }
 
@@ -142,23 +293,23 @@
         height: 100%;
         width: 100%;
         z-index: 0;
+        @include tab2-screen{
+            background-size: 40%;
+        }
+        @include tab-screen{
+            background-size: 40%;
+        }
+        @include mobile2-screen{
+            background-size: 50%;
+        }
+        @include mobile-screen{
+            background-size: 60%;
+        } 
     }
     
 }
 
 
-
-// .fadeInUp{
-//     -webkit-animation-name: fadeInUp;
-//     animation-name: fadeInUp;
-// }
-
-// .animated{
-//     -webkit-animation-duration: 1s;
-//     animation-duration: 1s;
-//     -webkit-animation-fill-mode: both;
-//     animation-fill-mode: both;
-// }
 
 @keyframes fadeInUp{
     0%{
