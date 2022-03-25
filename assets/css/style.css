@@ -220,6 +220,12 @@
   font-family: 'Wawati SC','HanziPen TC','Hannotate SC',sans-serif;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #navi .nav-menu li a {
+    font-size: 37px;
+  }
+}
+
 @media screen and (min-width: 501px) and (max-width: 767px) {
   #navi .nav-menu li a {
     font-size: 32px;
@@ -803,6 +809,24 @@
   line-height: 1.5em;
 }
 
+@media screen and (max-width: 500px) {
+  .product h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .product h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .product h3 {
+    font-size: 26px;
+  }
+}
+
 .chocopie {
   text-align: center;
   padding-bottom: 250px;
@@ -824,10 +848,24 @@
   }
 }
 
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .chocopie_img1,
+  .chocopie_img2,
+  .chocopie_img3 {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .chocopie_img1,
+  .chocopie_img2,
+  .chocopie_img3 {
+    height: 250px;
+  }
+}
+
 .fukidashi1,
-.fukidashi2,
-.chocopie_text1,
-.chocopie_text2 {
+.fukidashi2 {
   position: absolute;
   height: 200px;
   top: -20%;
@@ -835,72 +873,155 @@
 
 @media screen and (max-width: 500px) {
   .fukidashi1,
-  .fukidashi2,
-  .chocopie_text1,
-  .chocopie_text2 {
-    height: 150px;
+  .fukidashi2 {
+    height: 100px;
     top: -30%;
   }
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
   .fukidashi1,
-  .fukidashi2,
-  .chocopie_text1,
-  .chocopie_text2 {
-    top: -25%;
-  }
-}
-
-.fukidashi1,
-.chocopie_text1 {
-  left: 15%;
-}
-
-@media screen and (max-width: 500px) {
-  .fukidashi1,
-  .chocopie_text1 {
-    left: 0%;
-  }
-}
-
-@media screen and (min-width: 501px) and (max-width: 767px) {
-  .fukidashi1,
-  .chocopie_text1 {
-    left: 10%;
-  }
-}
-
-.fukidashi2,
-.chocopie_text2 {
-  left: 50%;
-}
-
-@media screen and (max-width: 500px) {
-  .fukidashi2,
-  .chocopie_text2 {
-    left: 0%;
-  }
-}
-
-@media screen and (min-width: 501px) and (max-width: 767px) {
-  .fukidashi2,
-  .chocopie_text2 {
-    left: 10%;
+  .fukidashi2 {
+    height: 135px;
+    top: -28%;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .fukidashi2,
-  .chocopie_text2 {
+  .fukidashi1,
+  .fukidashi2 {
+    top: -25%;
+    height: 165px;
+  }
+}
+
+.fukidashi1 {
+  left: 15%;
+}
+
+@media screen and (max-width: 1240px) {
+  .fukidashi1 {
+    left: 0%;
+  }
+}
+
+.fukidashi2 {
+  left: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .fukidashi2 {
     left: 20%;
   }
 }
 
-.chocopie_text1,
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .fukidashi2 {
+    left: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fukidashi2 {
+    left: 45%;
+  }
+}
+
+.chocopie_text1 {
+  top: -19%;
+  left: 20%;
+}
+
+@media screen and (max-width: 500px) {
+  .chocopie_text1 {
+    top: -35%;
+    left: 10%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .chocopie_text1 {
+    top: -32%;
+    left: 8%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .chocopie_text1 {
+    top: -26.5%;
+    left: 7%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  .chocopie_text1 {
+    left: 7%;
+  }
+}
+
 .chocopie_text2 {
+  top: -19%;
+  left: 58%;
+}
+
+@media screen and (max-width: 500px) {
+  .chocopie_text2 {
+    top: -35%;
+    left: 33%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .chocopie_text2 {
+    top: -32%;
+    left: 41%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .chocopie_text2 {
+    top: -27%;
+    left: 54%;
+  }
+}
+
+.chocopie_text3 {
+  top: -19%;
+  left: 25%;
+}
+
+@media screen and (max-width: 500px) {
+  .chocopie_text3 {
+    top: -37%;
+    left: 17%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .chocopie_text3 {
+    top: -33%;
+    left: 13%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .chocopie_text3 {
+    top: -27%;
+    left: 14%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  .chocopie_text3 {
+    left: 13%;
+  }
+}
+
+.chocopie_text1,
+.chocopie_text2,
+.chocopie_text3 {
+  position: absolute;
   height: 150px;
-  width: 510px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -912,15 +1033,31 @@
           justify-content: center;
   line-height: 1.5em;
   color: white;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 @media screen and (max-width: 500px) {
   .chocopie_text1,
-  .chocopie_text2 {
-    font-size: 15px;
-    width: 370px;
+  .chocopie_text2,
+  .chocopie_text3 {
+    font-size: 12px;
     height: 120px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  .chocopie_text1,
+  .chocopie_text2,
+  .chocopie_text3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .chocopie_text1,
+  .chocopie_text2,
+  .chocopie_text3 {
+    font-size: 19px;
   }
 }
 
@@ -1014,9 +1151,45 @@
   padding-top: 100px;
 }
 
+@media screen and (max-width: 500px) {
+  #arrange h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  #arrange h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #arrange h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  #arrange h1 {
+    font-size: 45px;
+  }
+}
+
 #arrange h2 {
   font-size: 20px;
   padding-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  #arrange h2 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  #arrange h2 {
+    font-size: 17.5px;
+  }
 }
 
 #arrange h3 {
@@ -1024,6 +1197,18 @@
   padding: 20px 0;
   line-height: 1.5em;
   font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  #arrange h3 {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  #arrange h3 {
+    font-size: 15px;
+  }
 }
 
 #arrange h4 {
@@ -1038,14 +1223,27 @@
 
 @media screen and (max-width: 500px) {
   #arrange p {
-    font-size: 80px;
+    font-size: 40px;
     margin: 5px;
   }
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
   #arrange p {
+    font-size: 55px;
     margin: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #arrange p {
+    font-size: 70px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  #arrange p {
+    font-size: 90px;
   }
 }
 
@@ -1056,13 +1254,25 @@
 
 @media screen and (max-width: 500px) {
   #arrange img {
-    height: 150px;
+    height: 130px;
   }
 }
 
 @media screen and (min-width: 501px) and (max-width: 767px) {
   #arrange img {
+    height: 170px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #arrange img {
     height: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  #arrange img {
+    height: 215px;
   }
 }
 
@@ -1125,7 +1335,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #arrange .chocopie_ice .chocopie_left, #arrange .chocopie_ice .chocopie_right {
-    width: 85%;
+    width: 75%;
   }
 }
 
@@ -1144,6 +1354,26 @@
 #arrange .chocopie_ice .chocopie_left .chocopie_ice_text, #arrange .chocopie_ice .chocopie_right .chocopie_ice_text {
   font-size: 15px;
   line-height: 1.5em;
+}
+
+@media screen and (max-width: 500px) {
+  #arrange .chocopie_ice .chocopie_left .chocopie_ice_text, #arrange .chocopie_ice .chocopie_right .chocopie_ice_text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  #arrange .chocopie_ice .chocopie_left .chocopie_ice_text, #arrange .chocopie_ice .chocopie_right .chocopie_ice_text {
+    font-size: 13.5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #arrange .chocopie_ice .chocopie_left .chocopie_ice_text, #arrange .chocopie_ice .chocopie_right .chocopie_ice_text {
+    width: 85%;
+    margin: 5% 0;
+    margin-left: 10%;
+  }
 }
 
 #arrange .change {
@@ -1193,6 +1423,18 @@ footer {
   height: 50px;
   background-color: #121212;
   color: white;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  footer {
+    font-size: 14.5px;
+  }
 }
 
 img {
